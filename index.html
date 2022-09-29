@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MáquinaVendas</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dados">
+        <h2>Saldo : R$<span id="saldoPessoa"></span></h2>
+    </div>
+
+    <div class="produtos">
+        <div>
+            <img class="imgProduto" id="produto1" src="https://static.paodeacucar.com/img/uploads/1/740/12059740.jpeg" />
+            <br>
+            <h3>Produto: CocaCola Lata - Preço : R$6,00 - Estoque: <span id="produtoQuant1">10</span></h3>
+        </div>
+        <div>
+            <img class="imgProduto" id="produto2" src="https://static.clubeextra.com.br/img/uploads/1/249/619249.jpg" />
+            <br>
+            <h3>Produto: Pepsi Lata - Preço : R$5,00 - Estoque: <span id="produtoQuant2">10</span></h3>
+        </div>
+        <div>
+            <img class="imgProduto" id="produto3" src="https://images-submarino.b2w.io/produtos/104907598/imagens/refrigerante-guarana-antarctica-lata-350-ml/104907601_1_xlarge.jpg" />
+            <br>
+            <h3>Produto: Guaraná Lata - Preço : R$4,00 - Estoque: <span id="produtoQuant3">10</span></h3>
+        </div>
+        <div>
+            <img class="imgProduto" id="produto4" src="https://farmaciaindiana.vteximg.com.br/arquivos/ids/205713/7894900660289_0.jpg?v=636746980087570000" />
+            <br>
+            <h3>Produto: Suco Del Vale - Preço : R$3,00 - Estoque: <span id="produtoQuant4">10</span></h3>
+        </div>
+        <div>
+            <img class="imgProduto" id="produto5" src="https://static.clubeextra.com.br/img/uploads/1/461/12306461.jpeg" />
+            <br>
+            <h3>Produto: Schweppes Lata - Preço : R$8,00 - Estoque: <span id="produtoQuant5">10</span></h3>
+        </div>
+    </div>
+    
+    <div class="maquina">
+        <p>Máquina de Vendas</p>
+        <input class ="saldo" id="saldo" value="" type="text" readonly="readonly"/>
+
+        <div>
+            <input class ="qualProduto" id="qualProduto" value="" type="text" readonly="readonly"/>
+            <button class="botoesAdicionar" onclick="selecionarMaisUmProduto()">↑</button>
+            <button class="botoesRemover" onclick="selecionarMenosUmProduto()">↓</button>
+            <button class="botoesComprar" onclick="comprar()">Comprar</button>
+        </div>
+            
+        <div class="teclado">
+            <button class="botoes" onclick="inserir(1)">1</button>
+            <button class="botoes" onclick="inserir(2)">2</button>
+            <button class="botoes" onclick="inserir(3)">3</button>
+            <button class="botoes" onclick="inserir(4)">4</button>
+            <button class="botoes" onclick="inserir(5)">5</button>
+            <button class="botoes" onclick="inserir(6)">6</button>
+            <button class="botoes" onclick="inserir(7)">7</button>
+            <button class="botoes" onclick="inserir(8)">8</button>
+            <button class="botoes" onclick="inserir(9)">9</button>
+            <button class="botoes" onclick="corrige()">X</button>
+            <button class="botoes" onclick="inserir(0)">0</button>
+            <button class="botoes" onclick="adicionarDinheiro()">Confirmar</button>
+            <button class="retirarDinheiro" onclick="retirarDinheiro()">Retirar Dinheiro</button>
+        </div>
+    </div>
+</body>
+</html>
